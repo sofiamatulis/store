@@ -11,10 +11,10 @@
 <body id="body">
   <div class = "menu-bar">
       <span id = "logo">
-        <%= link_to image_tag("seatyourself-logo.png"), products_path %>
+        <%= link_to image_tag("s.png"), products_path %>
       </span>
       <span class = "userinfo">
-          <% if current_user %>
+          <% if @current_user %>
             <span id = "welcome-message"> Signed in as <%= link_to "#{current_user.name}", user_path(current_user) %></span> |
             <span id = "log-out-button"><%= link_to "Log out", session_path("current"), :method => :delete %></span>
           <% else %>

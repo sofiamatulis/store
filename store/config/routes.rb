@@ -3,4 +3,15 @@ Rails.application.routes.draw do
 
   root 'products#index'
   resources :products
+
+
+
+  resources :users do
+    resources :products
+  end
+  resources :sessions,    only: [:new, :create, :destroy]
+
+
+
+
 end

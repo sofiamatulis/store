@@ -4,13 +4,16 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    # @user = User.find(params[:id])
+    @user = current_user
+
   end
 
   def create
     @user = User.new(user_params)
       if @user.save
-        redirect_to products_url, notice: "Account sucessfully created!"
+        session[:user_id] = @user.id
+        redirect_to products_path, notice: "Account sucessfully created!"
       else
         render "new"
       end
