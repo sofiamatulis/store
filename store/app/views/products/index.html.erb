@@ -1,21 +1,30 @@
 <div class="show">
 
 
-  <% @products.each do |product| %>
+  <!-- <#% @products.each do |product| %> -->
 
 
-            <div class='thumbnail'>
+            <!-- <div class='thumbnail'>
             <p>
               <strong>Product Name:</strong>
-              <%= product.title %></br>
+              <#%= product.title %></br>
             </p>
 
             <p>
               <strong>Price:</strong>
-              <%= product.price %>
+              <#%= product.price %>
             </p>
 
-            <%end %>
+            <#%end %> -->
 
+            <div class="list-container">
+  <% @products.each do |product| %>
+  <ul class="list-items">
+    <li id="image">
 
-          </div>
+    <li id="name"><h2><%= link_to product.title, product_path(product) %></h2></li>
+
+  </ul>
+  <% end %>
+</div>
+      </div>
