@@ -1,23 +1,6 @@
 <div class="show">
 
-
-  <!-- <#% @products.each do |product| %> -->
-
-
-            <!-- <div class='thumbnail'>
-            <p>
-              <strong>Product Name:</strong>
-              <#%= product.title %></br>
-            </p>
-
-            <p>
-              <strong>Price:</strong>
-              <#%= product.price %>
-            </p>
-
-            <#%end %> -->
-
-            <div class="list-container">
+  <div class="list-container">
   <% @products.each do |product| %>
   <ul class="list-items">
     <li id="image">
@@ -26,5 +9,6 @@
 
   </ul>
   <% end %>
+  </div>
+  
 </div>
-      </div>

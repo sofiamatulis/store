@@ -1,3 +1,78 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.sign-up-form{
+  margin:auto;
+  margin-top: 8%;
+  margin-bottom: 70px;
+  width: 300px;
+  padding: 50px 30px;
+  background-color:silver;
+  font-family: 'Muli', sans-serif;
+
+}
+
+.field input{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+
+}
+
+.actions {
+  text-align: center;
+}
+
+.field {
+  text-align:center;
+}
+
+.header {
+
+text-align:center;
+font-family: 'Muli', sans-serif;
+color:#015249;
+}
+
+label {
+  text-align:right;
+}
+
+input {
+  text-align:center;
+  font-family: 'Muli', sans-serif;
+
+}
+
+
+#log-in-button {
+  font-family: 'Muli', sans-serif;
+
+}
+
+#sign-up-button {
+  font-family: 'Muli', sans-serif;
+  margin-left: auto;
+
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+
+}
+
+p {
+  font-family: 'Muli', sans-serif;
+
+}
+
+div {
+  font-family: 'Muli', sans-serif;
+
+}
